@@ -322,5 +322,89 @@
     
         </div>
     </section>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>***Regresión lineal*** </h1>
+        </div>
+
+        <div class="subtema">
+            <h2>Regresión y corelación </h2>
+            <p> 1.- Diagramas de dispersión</p>
+            <p>Es una representación gráfica que muestra la relación entre dos variables cuantitativas. Cada punto en el gráfico representa una observación con un valor en el eje X y un valor correspondiente en el eje Y, permitiendo visualizar cómo se dispersan los datos y si existe alguna relación entre las variables.</p>
+            <p> 2.- Regresión lineal simple</p>
+            <p>Es un método estadístico que se utiliza para modelar la relación entre una variable dependiente (Y) y una única variable independiente (X). El objetivo principal de la regresión lineal simple es encontrar una ecuación lineal que mejor se ajuste a los datos observados, de manera que pueda utilizarse para predecir valores futuros de la variable dependiente basados en los valores de la variable independiente.</p>
+            <p>La forma general de un modelo de regresión lineal simple es:
+                \[
+                    Y = \beta_0 + \beta_1 X + \epsilon
+                \]
+            </p>
+            <p> 3.- Correlasión</p>
+            <p>La correlación es una medida estadística que describe la relación y la fuerza de la asociación entre dos variables cuantitativas. En términos simples, indica cómo se relacionan dos conjuntos de datos entre sí.</p>
+            <p>Existen dos tipos de correlación, la positiva y la negativa y se mide en un rango que va desde -1 a 1.</p>
+            <p>Calculo de la correlación:
+                \[
+                r = \frac{\sum (X_i - \bar{X})(Y_i - \bar{Y})}{\sqrt{\sum (X_i - \bar{X})^2 \sum (Y_i - \bar{Y})^2}}
+
+                \]
+            </p>
+
+            <p> 4.-  Determinación y análisis de los coeficientes de correlación y de determinación.</p>
+            <p>Son conceptos fundamentales en estadística que ayudan a comprender y evaluar la relación entre variables y la calidad del modelo de regresión lineal.</p>
+            <p> - Coeficiente de Correlación: El coeficiente de correlación (r) es una medida estadística que indica la fuerza y la dirección de la relación lineal entre dos variables cuantitativas. Los valores típicos de r están en el rango de -1 a +1</p>
+            <p>Cálculo:
+                \[
+                    r = \frac{\sum (X_i - \bar{X})(Y_i - \bar{Y})}{\sqrt{\sum (X_i - \bar{X})^2 \sum (Y_i - \bar{Y})^2}}
+                \]
+            </p>
+            <p>Evaluar la fuerza de la relación entre las variables. Valores cercanos a -1 o +1 indican una relación más fuerte, mientras que valores cercanos a 0 indican una relación más débil.</p>
+            <p>Interpretar la dirección (positiva o negativa) de la relación.</p>
+            <p> - Coeficiente de Determinación: El coeficiente de determinación (𝑅2) es una medida que indica la proporción de la varianza de la variable dependiente (Y) que es explicada por la variable independiente (X) en un modelo de regresión lineal:</p>
+            <p>Cálculo:
+                \[
+                    R^2 = 1 - \frac{\sum (Y_i - \hat{Y_i})^2}{\sum (Y_i - \bar{Y})^2}
+                \]
+            </p>
+            <p>Cuantificar qué tan bien el modelo de regresión lineal ajusta los datos observados.</p>
+            <p>Determinar la proporción de la variabilidad de Y que es explicada por X.</p>
+            <p> 5.-  Distribución normal bidimensional</p>
+            <p>La distribución normal bidimensional, también conocida como distribución normal bivariada, es una extensión de la distribución normal univariada a dos dimensiones. Describe la distribución conjunta de dos variables aleatorias continuas que están correlacionadas entre sí.</p>
+            <p>Función de Densidad de Probabilidad:
+                \[
+                    f(x, y | \mu_x, \mu_y, \sigma_x, \sigma_y, \rho) = \frac{1}{2 \pi \sigma_x \sigma_y \sqrt{1 - \rho^2}} \exp \left( -\frac{1}{2(1 - \rho^2)} \left[ \frac{(x - \mu_x)^2}{\sigma_x^2} + \frac{(y - \mu_y)^2}{\sigma_y^2} - \frac{2\rho(x - \mu_x)(y - \mu_y)}{\sigma_x \sigma_y} \right] \right)
+                \]
+            </p>
+            <p>Aplicaciones:</p>
+            <p>Análisis de Datos Multivariados: Se utiliza para modelar la reación conjunta entre dos valriables continuas.</p>    
+            <p>Finanzas: Para modelar la relación entre los rendimientos de dos activos financieros.</p>
+            <p>Ingeniería y Ciencias Sociales: Para estudiar la correlación entre variables medidas en diferentes dimensiones.</p>
+            <p> 6.- Intervalos de confianza y pruebas para el coeficiente de correlación.</p>
+            <p>Para el coeficiente de correlación, típicamente se utilizan intervalos de confianza y pruebas de hipótesis para determinar si la correlación observada en una muestra es estadísticamente significativa</p>
+            <p>Intervalo de Confianza para el Coeficiente de Correlación: Un intervalo de confianza es un rango dentro del cual se estima que se encuentra el valor real del coeficiente de correlación en la población, con cierto nivel de confianza (por ejemplo, 95% o 99%).</p>
+            <p>Se calcula usando la fórmula:
+                \[
+                    IC = r \pm z \sqrt{\frac{1 - r^2}{n - 2}}
+                \]
+            </p>
+            <p>Pruebas de hipótesis para el coeficiente de correlación: Permiten determinar si el coeficiente de correlación observado en una muestra es estadísticamente significativo, es decir, si la correlación en la población es diferente de cero.</p>
+            <p>Se puede calcular con la siguiente formula:
+                \[
+                    t = \frac{r\sqrt{n-2}}{\sqrt{1-r^2}}
+                \]
+            </p>
+
+            <p> 7.-  Errores de medición.</p>
+            <p>Los errores de medición se refieren a la diferencia entre el valor medido de una cantidad y su valor verdadero o real. El valor verdadero es el valor exacto, preciso y perfecto de la magnitud que se está midiendo, pero que en la práctica es desconocido. Por otro lado, es el resultado obtenido al medir esa magnitud, el cual siempre diferirá del valor verdadero debido a diversas fuentes de error, como:</p>
+            <p> > Imprecisión del instrumento de medición</p>
+            <p> > Condiciones ambientales que afectan la medición</p>
+            <p> > Errores humanos en la toma o registro de la medición</p>
+            <p> > Variabilidad natural del fenómeno que se está midiendo</p>
+            <p>Estos errores de medición se pueden clasificar en:</p>
+            <p> > Errores sistemáticos: Aquellos que afectan constante o predeciblemente a todas las mediciones.</p>
+            <p> > Errores aleatorios: Variaciones impredecibles en las mediciones, debido a causas no controlables.</p>
+            <p>Se pueden afectar significativamente el análisis y las conclusiones obtenidas a partir de los datos medidos, si no se identifica, cuantifica y tener en cuenta los errores de medicion. </p>
+        </div>
+    </section>
+
 </body>
 </html>
