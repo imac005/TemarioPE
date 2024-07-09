@@ -3,7 +3,8 @@
 <head>
 
     <title>TEMA 1 </title>
-   
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </head>
 
 <body>
@@ -212,21 +213,97 @@
         <div class="subtema">
             <h2>Distribucion Binomial</h2>
             <p>Es una distribución de probabilidad discreta que describe el número de éxitos en una secuencia de 𝑛 ensayos independientes, cada uno con una probabilidad fija 𝑝 de éxito. Es una de las distribuciones más importantes en la teoría de probabilidades y se utiliza para modelar situaciones en las que solo hay dos posibles resultados, típicamente llamados "éxito" y "fracaso".</p>
+            <p> - Formula Funcion de probabilidad:
+                
+                    \[ 
+                    f(k; n, p)=\binom{n}{k} \cdot p^k \cdot (1 - p)^{(n - k)}
+                    \]
+                
+            </p>
+            <p> - Media:
+                
+                \[ 
+                Media = n \cdot p
+                \]
+
+            </p>
+            <p> - Varianza:
+
+                \[
+                    np(1-p)
+                \]
+            
+            </p>
+            <p> - ¿Cuándo se puede usar?</p>
+            <p> - Experimentos de Bernoulli con dos reultados posibles  </p>
         </div>
 
         <div class="subtema">
             <h2>Distribucion hipergeometrica</h2>
             <p>Es una distribución de probabilidad discreta que describe el número de éxitos en una muestra aleatoria extraída sin reemplazo de una población finita. Es útil en situaciones donde los ensayos no son independientes y la probabilidad de éxito cambia con cada ensayo.</p>
+            <p> - Formula Funcion de probabilidad:
+                \[ 
+                f(k; n, p) = \frac{\binom{K}{k} \binom{N - K}{n - k} }{\binom{N}{n}} 
+                \]    
+            </p>
+            <p> - Media:
+                \[
+                    Media = \frac{nK}{N}
+                \]
+            </p>
+            <p> - Varianza:
+                \[
+                    Varianza = \frac{nK(N - K)(N - n)}{N^{2}(N - 1)}
+                \]
+            </p>
+            <p> - ¿Cuándo se puede usar?</p>
+            <p>Muestreo sin reemplazo de una población finita</p>
         </div>
 
         <div class="subtema">
             <h2>Distribucion de Poisson</h2>
             <p>Es una distribución de probabilidad discreta que describe el número de eventos que ocurren en un intervalo fijo de tiempo o espacio, bajo la suposición de que estos eventos ocurren con una tasa constante y de forma independiente entre sí.</p>
+            <p> - Formula funcion de probabilidad:
+                \[
+                    f(k:λ) = \frac{e^{-λ}λ^{k}}{k!}
+                \]
+            </p>
+            <p> - Media:
+                \[
+                    λ
+                \]
+            </p>
+            <p> - Varianza:
+                \[
+                    λ
+                \]
+            </p>
+            <p> - ¿Cuándo se puede usar?</p>
+            <p>Modelar eventos raros y discretos en un intervalo de tiempo o espacio</p>
         </div>
 
         <div class="subtema">
             <h2>Distribucion normal</h2>
             <p>También conocida como distribución gaussiana, es una de las distribuciones de probabilidad más importantes en estadística y probabilidad debido a su prevalencia en la naturaleza y su utilidad en diversas aplicaciones. Su forma de campana simétrica es una característica distintiva.</p>
+            <p> - Formula Funcion de probabilidad:
+
+                \[
+                    f(x; \mu, \sigma^2) = \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}
+                \]
+
+            </p>
+            <p> - Media:
+                \[
+                    \mu
+                \]
+            </p>
+            <p> - Varianza:
+                \[
+                    \sigma^2
+                \]
+            </p>
+            <p> - ¿Cuándo se puede usar?</p>
+            <p>Modelar datos continuos con una distribución simétrica</p>
         </div>
 
         <div class="subtema">
@@ -242,6 +319,7 @@
         <div class="subtema">
             <h2>Distribucion F</h2>
             <p>Es una distribución de probabilidad continua que se utiliza principalmente en el análisis de varianza (ANOVA), en la comparación de dos estimaciones de varianza y en otros contextos donde se comparan distribuciones de chi-cuadrado. Es especialmente útil cuando se quiere evaluar si dos poblaciones tienen la misma varianza.</p>
+    
         </div>
     </section>
 </body>
